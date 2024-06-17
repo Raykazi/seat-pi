@@ -46,11 +46,11 @@ use Seat\Api\Http\Resources\Json\JsonResource;
             description: 'Upgrade level of the planet',
             type: 'integer'
         ),
-        new OA\Property(
-            property: 'extractors',
-            description: 'List of extractors on the planet',
-            ref: '#/components/schemas/Extractors'
-        )
+//        new OA\Property(
+//            property: 'extractors',
+//            description: 'List of extractors on the planet',
+//            ref: '#/components/schemas/Extractors'
+//        )
     ]
 )]
 
