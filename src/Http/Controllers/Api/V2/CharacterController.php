@@ -5,9 +5,12 @@ namespace Raykazi\Seat\PI\Http\Controllers\Api\V2;
 use Seat\Api\Http\Controllers\Api\v2\ApiController;
 use Raykazi\Seat\PI\Http\Resources\PIResource;
 use Seat\Api\Http\Resources\Json\JsonResource;
+use Seat\Eveapi\Models\PlanetaryInteraction\CharacterPlanet;
+use Seat\Eveapi\Models\PlanetaryInteraction\CharacterPlanetExtractor;
+use Seat\Eveapi\Models\PlanetaryInteraction\CharacterPlanetPin;
 
 /**
- * Class UserController.
+ * Class CharacterController.
  */
 class CharacterController extends ApiController
 {
