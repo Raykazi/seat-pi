@@ -49,7 +49,6 @@ use Seat\Api\Http\Resources\Json\JsonResource;
         new OA\Property(
             property: 'extractors',
             description: 'List of extractors on the planet',
-            type: 'array',
             ref: '#/components/schemas/Extractors'
         )
     ]

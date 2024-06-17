@@ -37,7 +37,6 @@ class SeatPIServiceProvider extends AbstractSeatPlugin
     {
         $this->mergeConfigFrom(__DIR__ . '/Config/package.sidebar.php', 'package.sidebar');
         $this->mergeConfigFrom(__DIR__ . '/Config/seat-pi.config.php', 'seat-pi.config');
-
         $this->registerPermissions(__DIR__ . '/Config/seat-pi.permissions.php', 'seat-pi');
     }
 
@@ -103,8 +102,6 @@ class SeatPIServiceProvider extends AbstractSeatPlugin
     private function addCommands()
     {
         $this->commands([
-//            DriverUpdateSets::class,
-//            DriverApplyPolicies::class,
         ]);
     }
 
@@ -113,7 +110,7 @@ class SeatPIServiceProvider extends AbstractSeatPlugin
      */
     private function addViews()
     {
-//        $this->loadViewsFrom(__DIR__ . '/resources/views', 'seat-pi');
+        $this->loadViewsFrom(__DIR__ . '/resources/views', 'seat-pi');
     }
 
     /**
@@ -131,7 +128,7 @@ class SeatPIServiceProvider extends AbstractSeatPlugin
      */
     private function addTranslations()
     {
-//        $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'seat-pi');
+        $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'seat-pi');
     }
 
     /**
